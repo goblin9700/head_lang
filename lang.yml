@@ -1,0 +1,118 @@
+menu:
+   get:
+      open: '&aОткрыть меню'
+      added: ''
+      not-enough-money: '&cУ вас нет достаточно денег , чтобы купить эту голову'
+      transaction-error: '&cОшибка принимая ваши деньги'
+      category-permission: '&cУ вас нет разрешения на открытие категории &4%category%'
+   search:
+      added: ''
+      not-enough-money: '&cУ вас недостаточно денег , чтобы купить эту голову'
+      transaction-error: '&cОшибка принимая ваши деньги'
+      category-permission: '&cУ вас нет разрешения на открытие категории &4%category%'
+   remove:
+      open: '&cВыберите голову, чтобы удалить ее'
+      removed: '&cУдаление головы &4%name%'
+   rename:
+      open: '&7Выберите голову, чтобы переименовать ее &6%newname%'
+      renamed: '&7Имя головы &6%name% &7будет зименено на &6%newname%'
+   cost:
+      open: '&7Выберите голову, чтобы установить цену &6%newcost%'
+      set-cost: '&7Новая цена на голову &6%name% &7будет &6%newcost%'
+   id:
+      open: '&7Нажмите на голову, чтобы получить ее идентификатор'
+      clicked: '&7Голова &6%name% &7имеет индетификатор &6%id%'
+command:
+   errors:
+      must-be-player: '&cКоманда должна выполняться от мени игрока'
+      no-permission: '&cНет прав.'
+      invalid-arguments: '&4Неправильный аргумент > &c%valid%'
+      integer: '&cВы должны ввести целое число > Вы ввели &4%number%'
+      number: '&cВы должны ввести номер > Вы ввели &4%number%'
+      negative: '&cВы должны ввести положительное число > Вы ввели &4%number%'
+   help:
+      header: '&7&m                  &7[&6&lГОЛОВЫ&7]&7&m                  '
+      line: '&6%command% &7- &5%description%'
+      help:
+         command: '/heads help'
+         description: 'Открыть меню'
+   get:
+      head-name: '&7%name% голова'
+      old-method: '&cПолучение головы текстур не поддерживается ранее 1.8, используя старый метод'
+      adding: '&7Добавление &6%name%&7 головы в ваш инвентарь'
+      fetching: '&7Загрузка текстур, подождите'
+      cant-find:
+      - '&cНевозможно отбразить голову игрока &4%name%'
+      - '&4Не найден такой премиум игрок или недоступен сервер скинов.'
+      help:
+         command: '/heads get <player name>'
+         description: 'Выдать игроку голову'
+   search:
+      found: '&7Found &6%heads% heads &7matching &6%query%'
+      none-found: '&cFound no heads matching &4%query%'
+      help:
+         command: '/heads search <search query>'
+         description: 'Find useful heads'
+   random:
+      no-heads: '&cНет зарегистрированных голов'
+      giving: '&7Вы выдали голову &6%name% &7из категории &6%category%'
+      help:
+         command: '/heads random'
+         description: 'Выдать рандомную голову'
+   add:
+      not-supported: '&cТекстуры голов не поддерживаются на спигот ниже 1.8'
+      category-length:
+      - '&cНазвание категории должно быть не более 32 символов'
+      - '&cВы ввели &4%category% &c(%length% символов)'
+      fetching: '&7Загрузка текстур, немного подождите...'
+      cant-find:
+      - '&cНевозможно отобразить голову игрока &4%name%'
+      - '&4Не найден такой премиум игрок или недоступен сервер скинов.'
+      adding: '&7Добавлена голова &6%name%&7 в категорию &6%category%'
+      help:
+         command: '/heads add <player-name> <category> <head name>'
+         description: 'Добавление новой головы в меню'
+   hand:
+      not-supported: '&cТекстуры голов не поддерживаются на спигот ниже 1.8'
+      no-texture-property: '&cТекстура не найдена. уточните ник игрока со скином'
+      no-name-property: '&cNo name property found, unable to add head'
+      not-skull: '&cВ руке должна находится голова'
+      category-length:
+      - '&cНазвание категории должно быть не более 32 символов'
+      - '&cВы ввели &4%category% &c(%length% символов)'
+      fetching: '&7Загрузка текстур, немного подождите...'
+      cant-find:
+      - '&cНевозможно отобразить голову игрока &4%name%'
+      - '&4Недоступен сервер скинов или у такого игрока нет премиум-аккаунта.'
+      adding: '&7Добавлена голова &6%name%&7 в категорию &6%category%'
+      help:
+         command: '/heads hand <category> <head name>'
+         description: 'Добавление новой головы в меню'
+   give:
+      cant-find-player: '&cНе найден игрок &4%name%'
+      cant-find-head: '&cНе найдена голова с идентификатором &4%id%'
+      give: '&7Выдана &6%amount% &7голова &6%head% &7игроку &6%name%'
+      invalid-amount: 'Количество должно быть больше нуля. Вы ввели &4%number%'
+      help:
+         command: '/heads give <head id> <player> <amount>'
+         description: 'Выдать голову игроку'
+   remove:
+      help:
+         command: '/heads remove'
+         description: 'Удалить голову из меню'
+   rename:
+      help:
+         command: '/heads rename <new name>'
+         description: 'Переименовать голову в меню'
+   cost:
+      help:
+         command: '/heads cost <new cost>'
+         description: 'Установить цену на голову в меню'
+   open-menu:
+      help:
+         command: '/heads'
+         description: 'Открыть меню голов'
+   id:
+      help:
+         command: '/heads id'
+         description: 'Open a menu to get a heads id'
